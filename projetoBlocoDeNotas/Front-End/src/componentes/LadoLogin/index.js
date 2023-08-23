@@ -37,6 +37,14 @@ function LadoLogin(props) {
         </div>
         <p className="textoCheck sublinhado">Esqueci a senha</p>
       </div>
+      <div className="barraEstilo"></div>
+      {/*
+      Trocar estização de inline para a pagina normal e finalizar a mesma
+      <div style={{display:'flex',height:'auto',justifyContent:'space-between',width:'100%',maxWidth:'65%'}}>
+      <p>Não tem conta?</p>
+      <p className="sublinhado">Faça o cadastro!</p>
+      </div>
+      */}
       <Botao botao="Login" imagem="none"></Botao>
     </div>
   );
