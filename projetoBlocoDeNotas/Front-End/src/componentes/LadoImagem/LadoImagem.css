@@ -1,0 +1,26 @@
+.ladoImagem {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #273A2D;
+}
+.foto {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #6F7357;
+  box-sizing: border-box;
+}
+.imagem{
+    width: 100%;
+    max-width: 60%;
+    height: auto;
+}

@@ -4,7 +4,7 @@ import './CampoTexto.css';
 const CampoTexto = (props)=>{
     return(
         <input
-        type="text"
+        type={props.tipoInput}
         className="inputTexto"
         placeholder={props.CampoTexto}
       />

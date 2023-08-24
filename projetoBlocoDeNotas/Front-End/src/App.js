@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Background from "./componentes/BackgroundPrincipal/index.js";
+import LadoImagem from "./componentes/LadoImagem";
 function App(props) {
 const [tamanhoTela,setTamanhoTela] = useState("");
 
@@ -14,7 +15,7 @@ useEffect(() =>{
   }
 })
 
-  if(window.innerWidth >= 776){
+  if(window.innerWidth >= 901){
     return (
       <div className="backgroundGeral">
         <Background
@@ -23,12 +24,12 @@ useEffect(() =>{
           alinhamento="rigth"
           padding="0 0 0 20px"
         ></Background>
-        <Background
+        <LadoImagem
           color="#273A2D"
           colorLado="#6F7357"
           alinhamento="left"
           padding = '0 20px 0 0'
-        ></Background>
+        ></LadoImagem>
       </div>
     );
   }
@@ -41,12 +42,7 @@ useEffect(() =>{
         alinhamento="end"
         padding=" 0 20px"
       ></Background>
-      <Background
-        color="#273A2D"
-        colorLado="#6F7357"
-        alinhamento="start"
-        padding="0 20px"
-      ></Background>
+    
     </div>
   );
   }
